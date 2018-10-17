@@ -1,0 +1,29 @@
+
+
+.shorty-clock{
+	display:inline-block;
+}
+
+
+.wr {
+	position: relative;
+	background-image: url(../img/bg.png);
+	height: 210px;
+	width: 234px;
+	float: left;
+}
+
+.dot{
+	font-size: 120px;
+	text-align: center;
+	color: #FFF;
+	background-image: url(../img/bagr.png);
+	top: 15px;
+	left: 22px;
+	background-repeat: no-repeat;
+	padding-top: 70px;
+	height: 164px;
+	width: 190px;
+	position: absolute;
+	}
+

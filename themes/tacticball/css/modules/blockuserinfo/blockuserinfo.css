@@ -1,0 +1,12 @@
+.header_user_info {
+  float: right; }
+  .header_user_info a {
+    color: white;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    line-height: 18px; }
+    @media (max-width: 479px) {
+      .header_user_info a {
+        font-size: 11px; } }
+    .header_user_info a:hover, .header_user_info a.active {}
