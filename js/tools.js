@@ -606,26 +606,26 @@ function getStorageAvailable() {
 	}
 }
 
-$(document).ready(function()
-{
-	// Hide all elements with .hideOnSubmit class when parent form is submit
-	$('form').submit(function() {
-		$(this).find('.hideOnSubmit').hide();
-	});
+// $(document).ready(function()
+// {
+// 	// Hide all elements with .hideOnSubmit class when parent form is submit
+// 	$('form').submit(function() {
+// 		$(this).find('.hideOnSubmit').hide();
+// 	});
 
-	$.fn.checkboxChange = function(fnChecked, fnUnchecked) {
-		if ($(this).prop('checked') && fnChecked)
-			fnChecked.call(this);
-		else if(fnUnchecked)
-			fnUnchecked.call(this);
+// 	$.fn.checkboxChange = function(fnChecked, fnUnchecked) {
+// 		if ($(this).prop('checked') && fnChecked)
+// 			fnChecked.call(this);
+// 		else if(fnUnchecked)
+// 			fnUnchecked.call(this);
 
-		if (!$(this).attr('eventCheckboxChange'))
-		{
-			$(this).on('change', function() { $(this).checkboxChange(fnChecked, fnUnchecked); });
-			$(this).attr('eventCheckboxChange', true);
-		}
-	};
+// 		if (!$(this).attr('eventCheckboxChange'))
+// 		{
+// 			$(this).on('change', function() { $(this).checkboxChange(fnChecked, fnUnchecked); });
+// 			$(this).attr('eventCheckboxChange', true);
+// 		}
+// 	};
 
-	// attribute target="_blank" is not W3C compliant
-	$('a._blank, a.js-new-window').attr('target', '_blank');
-});
+// 	// attribute target="_blank" is not W3C compliant
+// 	$('a._blank, a.js-new-window').attr('target', '_blank');
+// });
